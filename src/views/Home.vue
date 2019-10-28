@@ -37,6 +37,11 @@ export default class Home extends Vue {
 
     const defaultList = this.createArray(10,'dale')
     console.log('tom',dale,this.fibonacci,defaultList,this.myNumSize(10,20))
+
+    enum Days {Sun, Mon, Tue, Wed, Thu, Fri, Sat}
+    console.log(Days["Sun"] === 0); // true
+
+
   }
 
   createArray<T>(length: number, value: T): Array<T> {
